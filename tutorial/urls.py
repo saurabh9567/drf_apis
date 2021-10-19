@@ -1,4 +1,4 @@
-"""myproj URL Configuration
+"""tutorial URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -20,6 +20,6 @@ from django.urls import include, path
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include('snippets.urls')),
-    path('', include('myapp.urls')),    
+    path('', include('quickstart.urls')),    
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
